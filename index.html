@@ -108,52 +108,54 @@
 
     /* Typing Animation */
 
-    #typing-animation {
-      position: relative;
-      font-size: 30px;
-      font-weight: bold;
-      color: white;
-      overflow: hidden;
-      white-space: nowrap;
-      animation: typing 3s steps(20, end) infinite;
-    }
+	#typing-animation {
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+	font-size: clamp(18px, 4vw, 30px);
+	font-weight: bold;
+	color: white;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: typing 3s steps(30, end) infinite;
+	}
 
 
-    #typing-animation:before {
-      content: "";
-      top: 0;
-      left: 0;
-      width: 0;
-      height: 100%;
-      background-color: #ccc;
-      animation: typing-cursor 0.5s ease-in-out infinite;
-    }
+	#typing-animation:before {
+	content: "";
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #ccc;
+	animation: typing-cursor 0.5s ease-in-out infinite;
+	}
 
 
-    @keyframes typing {
+	@keyframes typing {
 
-      from {
-        width: 0;
-      }
+	from {
+		width: 0;
+	}
 
-      to {
-        width: 100%;
-      }
+	to {
+		width: 100%;
+	}
 
-    }
+	}
 
 
-    @keyframes typing-cursor {
+	@keyframes typing-cursor {
 
-      from {
-        width: 5px;
-      }
+	from {
+		width: 5px;
+	}
 
-      to {
-        width: 0;
-      }
+	to {
+		width: 0;
+	}
 
-    }
+	}
 
 
     /* Project Image Zoom */
@@ -353,9 +355,7 @@
                     document.getElementById('typing-animation');
 
 
-                  const typingTexts = [
-                    'Aspiring ServiceNow Developer '
-                  ];
+                  const typingTexts = ['ServiceNow Developer'];
 
 
                   function playTypingAnimation(text) {
