@@ -193,6 +193,41 @@
       background-color: white !important;
     }
 
+	/* ======================================
+   HOME SECTION HEIGHT FIX
+   Reduces empty black space between
+   typing animation and About section
+	====================================== */
+
+	#home-section {
+	min-height: auto !important;
+	}
+
+	#home-section .home-slider {
+	min-height: 60vh !important;
+	height: auto !important;
+	}
+
+	#home-section .slider-item {
+	min-height: 60vh !important;
+	height: auto !important;
+	}
+
+
+	/* Mobile View */
+
+	@media (max-width: 768px) {
+
+	#home-section .home-slider {
+		min-height: 50vh !important;
+	}
+
+	#home-section .slider-item {
+		min-height: 50vh !important;
+	}
+
+}
+
   </style>
 
 </head>
@@ -296,6 +331,9 @@
   <br>
   <br>
   <br>
+  <br>
+  <br>
+
 
 
 
